@@ -1,0 +1,22 @@
+#UserList-table {
+  th {
+    //text-align: center;
+  }
+
+  td {
+    &.break-word {
+      word-break: break-word;
+    }
+    vertical-align: middle;
+    &:last-child {
+      a {
+        display: block;
+        text-align: center;
+        .detail {
+          width: 20px;
+        }
+      }
+    }
+  }
+
+}

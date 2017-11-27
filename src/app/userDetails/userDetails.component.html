@@ -1,0 +1,48 @@
+<div class="d-sm-flex align-items-center h-100 user-detail">
+  <div class="card mx-auto">
+    <div class="container card-body">
+      <h4 class="card-title text-center">
+        <a routerLink="/user-list" class="back-link">&#8592; </a>
+        Détails de {{user.name}}
+      </h4>
+      <p class="row">
+        <span class="col-sm property"><strong>Id :</strong></span>
+        <span class="col-sm value">{{user.id}}</span>
+      </p>
+      <p class="row">
+        <span class="col-sm property"><strong>Name :</strong></span>
+        <span class="col-sm">{{user.name}}</span>
+      </p>
+      <p class="row">
+        <span class="col-sm property"><strong>Address :</strong></span>
+        <span class="col-sm value">
+          <span>{{user.address.suite}} {{user.address.street}}</span><br/>
+          <span>{{user.address.zipcode}} {{user.address.city}}</span><br/>
+          <span>Lat&nbsp;: {{user.address.geo.lat}} / Lon&nbsp;: {{user.address.geo.lng}}</span>
+        </span>
+      </p>
+      <p class="row">
+        <span class="col-sm property"><strong>Company :</strong></span>
+        <span class="col-sm value">
+          <span>{{user.company.name}}</span><br/>
+          <span>{{user.company.catchPhrase}}</span><br/>
+          "<span class="first-letter-capitalize">{{user.company.bs}}</span>"
+        </span>
+      </p>
+      <p class="row">
+        <span class="col-sm property"><strong>Phone :</strong></span>
+        <span class="col-sm value"><a [attr.href]="'tel:' + user.phone">{{user.phone}}</a></span>
+      </p>
+      <p class="row">
+        <span class="col-sm property"><strong>Email :</strong></span>
+        <span class="col-sm value"><a [attr.href]="'mailto:' + user.email">{{user.email}}</a></span>
+      </p>
+      <p class="row">
+        <span class="col-sm property"><strong>Website :</strong></span>
+        <span class="col-sm value">
+          <a [attr.href]="'http://' + user.website" target="_blank">{{user.website}}</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</div>

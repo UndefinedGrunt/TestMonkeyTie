@@ -1,0 +1,36 @@
+.user-detail {
+  background: #212529;
+  overflow: auto;
+  .card {
+    .back-link {
+      color: white;
+      margin-right: 10px;
+      font-family: sans-serif;
+      display: inline-block;
+      background: #212529;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      transition: border-radius .3s;
+      &:hover {
+        text-decoration: none;
+        border-radius: 25%;
+      }
+    }
+    .card-title {
+      margin-bottom: 30px;
+    }
+    .row {
+      margin: 10px;
+    }
+  }
+
+  .property {
+    flex: 0 1 150px;
+  }
+
+  .value {
+
+  }
+
+}
